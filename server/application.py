@@ -19,7 +19,6 @@ class TestMe():
         return PORT
 
 if __name__ == '__main__':
-    """Main.com"""
     Handler = http.server.SimpleHTTPRequestHandler
     with socketserver.TCPServer(("", PORT), Handler) as http:
         print("Port Vlasova: ", PORT)
