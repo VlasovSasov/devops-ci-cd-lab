@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: docker build -t test-image ./server --file ./server/dockerfile
-      - run: docker run -d --name app-server -p 8000:8000 --restart unless-stoped test-image
+      - run: docker run -d --name app-server -p 8000:8000 --restart unless-stopped test-image
       - run: sleep 5
       - run: docker ps -a
       - run: sleep 5
