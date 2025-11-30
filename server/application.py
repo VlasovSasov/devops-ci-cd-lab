@@ -8,12 +8,14 @@ import socketserver
 PORT = 8000
 
 class TestMe():
-    """ Dai 5!"""
+    """ Test class"""
+
     def take_five(self):
+        """Return 5"""
         return 5
 
-    """ Nomer porta"""
     def port(self):
+        """Return port"""
         return PORT
 
 if __name__ == '__main__':
